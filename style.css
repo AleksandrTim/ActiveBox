@@ -27,8 +27,9 @@ p {
 =========================*/
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -264,4 +265,144 @@ p {
     font-size: 14px;
     font-weight: normal;
     font-family: 'Raleway', sans-serif;
+}
+
+/* Team
+=========================*/
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.team__name {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+    color: #2d3033;
+}
+
+.team__prof {
+    margin-bottom: 15px;
+    color: #e84545;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.team__text {
+    line-height: 21px;
+    color: #6c7279;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Social
+=========================*/
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+
+    background-color: white;
+    border: 1px solid #e8ecee;
+
+    transition: background .2s 
+    linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social__item:hover .social_icon
+{
+    fill: black;
+}
+
+.social_icon {
+    display: block;
+
+    height: 18px;
+
+    fill: #c6cacc;
+
+    transition: fill .2s linear;
+}
+
+/* Testimonials
+=========================*/
+.testimonials {
+    background-color: #53354a;
+}
+
+.testimonials__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.testimonials__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.testimonials__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.testimonials__text {
+    font-family: 'Cardo', 
+    sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.testimonials__author {
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway',
+    sans-serif;
+    text-transform: uppercase;
 }
