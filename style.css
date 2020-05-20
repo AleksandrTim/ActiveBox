@@ -402,9 +402,21 @@ p {
     background-color: #53354a;
 }
 
+.testimonials__slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.testimonials__slider.slick-initialized 
+{
+    height: auto;
+}
+
+
 .testimonials__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .testimonials__photo {
@@ -447,6 +459,49 @@ p {
     font-family: 'Raleway',
     sans-serif;
     text-transform: uppercase;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0 0 20px;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    background: white;
+    border-radius: 50%;
+    border: 0;
+    opacity: .5;
+
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots button:focus {
+    outline: none;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
 }
 
 /* Download
@@ -598,6 +653,24 @@ p {
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        flex-direction: column;
+
+        background-color: #31344e;
+        text-align: right;
+        
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
     }
 
     /* Burger */
@@ -738,6 +811,6 @@ p {
 
     /* Testimonials */
     .testimonials__img {
-        right: -170px;
+        /* right: -170px; */
     }
 }
