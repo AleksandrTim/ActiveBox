@@ -223,6 +223,8 @@ p {
 
 
 .works__photo {
+    min-width: 100%;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -570,7 +572,14 @@ p {
 
 /* Media
 =========================*/
-@media (max-width: 990px) {
+@media (max-width: 1300px) {
+    /* Works */
+    .works__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
 
     /* Nav */
     .nav {
@@ -586,9 +595,49 @@ p {
     .intro__title {
         font-size: 40px;
     }
+
+    /* Features */
+    .features__item {
+        width: 50%;
+    }
+
+    /* Team */
+    .team__item {
+        width: 50%;
+
+        text-align: center;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Social */
+    .social {
+        justify-content: center;
+    }
+
+    /* Testimonials */
+    .testimonials__photo {
+        width: 100%;
+        margin: 15px 0 40px;
+    }
+
+    .testimonials__content {
+        width: 100%;
+        padding-bottom: 40px;
+        /* padding: 0 0 -40px -80px; */
+    }
+
+    .testimonials__img {
+        min-width: 100%;
+        right: -15px;
+    }
+
 }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
 
     /* Intro */
     .intro {
@@ -605,5 +654,76 @@ p {
         margin-bottom: 30px;
 
         font-size: 16px;
+    }
+
+    /* Features */
+    .features {
+        margin: 40px 0;
+    }
+
+    .features__item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Works */
+    .works__item {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Team */
+    .team {
+        margin: 60px 0 30px;
+    }
+
+    .team__item {
+        width: 100%;
+    
+        text-align: center;
+    }
+
+    /* Testimonials */
+    .testimonials__text {
+        font-size: 25px;
+    }
+
+    /* Btn */
+    .btn--long {
+        min-width: 260px;
+    }
+    
+    /* Download */
+    .download {
+        margin: 50px 0;
+    }
+    
+    .download__title {
+        font-size: 24px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        padding: 30px 0;
+    }
+
+    .footer__block {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer__block:last-child {
+         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 414px) {
+
+    /* Testimonials */
+    .testimonials__img {
+        right: -170px;
     }
 }
